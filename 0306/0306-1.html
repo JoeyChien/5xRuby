@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <form action="">
+        <!-- label包input不須留for，點到label會自己跳到input那邊 -->
+        <!-- row1 start-->
+        <div>
+            <label>
+                姓名:
+                <input type="text" name="">
+            </label>
+        </div>
+        <!-- row1 end-->
+
+        <!-- Tag分開須留for，點到label會自己跳到input那邊 -->
+        <!-- row2 start-->
+        <div>
+            <label for="user_name">姓名:</label>
+            <input type="text" id="user_name" name="">
+        </div>
+        <!-- row2 end-->
+        <!-- row3 start-->
+        <div>
+            <label for="keyword">搜尋:</label>
+            <input type="search" id="keyword" name="">
+        </div>
+        <!-- row3 end-->
+        <!-- row3 start-->
+        <div>
+            <label id="password">密碼:</label>
+            <input type="password" name="">
+        </div>
+        <!-- row3 end-->
+
+        <!-- row3 start-->
+        <div>
+            <label>電話:</label>
+            <input type="tel" name="">
+        </div>
+        <!-- row3 end-->
+
+        <!-- row3 start-->
+        <div>
+            <label>日期:</label>
+            <input type="date" name="">
+        </div>
+        <!-- row3 end-->
+        <!-- row3 start-->
+        <div>
+            <label>上傳:</label>
+            <input type="file" name="">
+        </div>
+        <!-- row3 end-->
+        <!-- row3 start-->
+        <div>
+            <label>色彩:</label>
+            <input type="color" name="">
+        </div>
+        <!-- row3 end-->
+        <!-- row3 start-->
+        <div>
+            <label>範圍:</label>
+            <input type="range" name="">
+        </div>
+        <!-- row3 end-->
+        <!-- row3 start-->
+        <div>
+            <label>興趣:</label>
+            <label><input type="checkbox" name="">睡覺</label>
+            <label><input type="checkbox" name="">釣魚</label>
+            <label><input type="checkbox" name="">看電視</label>
+            <label><input type="checkbox" name="">耍廢</label>
+        </div>
+        <!-- row3 end-->
+        <!-- row3 start-->
+        <div>
+            <span>性別:</span>
+            <label>
+                <input type="radio" name="sex">男
+            </label>
+            <label>
+                <input type="radio" name="sex">女
+            </label>
+        </div>
+        <!-- row3 end-->
+        <!-- row3 start-->
+        <div>
+            <label>留言:</label>
+            <textarea rows="5"></textarea>
+        </div>
+        <!-- row3 end-->
+        <!-- row3 start-->
+        <div>
+            <input type="submit" name="">
+            <input type="reset" name="">
+            <!-- type button 同樣有送出功能 -->
+            <input type="button" name="" value="我是button屬性input">
+            <!-- button tag 因為是成對tag所以比較適合做視覺設計 -->
+            <button>我是button tag</button>
+        </div>
+        <!-- row3 end-->
+
+
+    </form>
+
+    <p>Lorem ipsum dolor sit amet <div>consectetur,</div> adipisicing elit. Neque provident, placeat, repellendus,
+        commodi aspernatur in laudantium impedit quas aut beatae cumque reprehenderit? Cum corrupti nesciunt aliquid
+        aspernatur cumque neque. Veritatis?</p>
+</body>
+
+</html>

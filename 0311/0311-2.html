@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .wrap{
+            width: 1200px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+        .item{
+            width: 580px;
+            border: 1px solid grey;
+            /*以border為外框*/
+            box-sizing: border-box;
+            /*刪掉flex就可以變成直式ㄉ*/
+            /* display: flex; */
+            margin: 10px;           
+        }        
+        .item .pic{
+            width: 100%;
+            padding: 5px;
+            /*因為有padding圖片會被擠出框線，故選擇以border為準*/
+            box-sizing: border-box;
+        }
+        .item .text{
+            width: 70%;
+            padding: 5px;
+        }
+        .item img{
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="pic">
+                <img src="https://5xruby.tw/assets/images/talks/cover/vue-js-61eaa1c7.jpg" alt="">    
+            </div>
+            <div class="text">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus consectetur deserunt fuga aliquam? </p>    
+            </div>            
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="https://5xruby.tw/assets/images/talks/cover/vue-js-61eaa1c7.jpg" alt="">    
+            </div>
+            <div class="text">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus consectetur deserunt fuga aliquam?</p>    
+            </div>            
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="https://5xruby.tw/assets/images/talks/cover/vue-js-61eaa1c7.jpg" alt="">    
+            </div>
+            <div class="text">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus consectetur deserunt fuga aliquam?</p>    
+            </div>            
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="https://5xruby.tw/assets/images/talks/cover/vue-js-61eaa1c7.jpg" alt="">    
+            </div>
+            <div class="text">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus consectetur deserunt fuga aliquam?</p>    
+            </div>            
+        </div>
+    </div>
+</body>
+</html>

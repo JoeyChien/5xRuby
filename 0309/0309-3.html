@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .warp{
+            width: 600px;
+            font-size: 0; /*(1)把warp中的字體大小變為0，使空白不要影響到切版*/
+        }
+        .item{
+            width: 200px;
+            display: inline-block;
+            vertical-align: top; /*因為inline-block預設會對期物件底部的基線，故將其對其設置為上方，才不會跑版*/
+            font-size: 16px;  /*(1)因繼承到warp的字體大小，故把字大小設定回來*/
+            /*(4)margin-left: -4px;*/   
+            /*(4)margin-right: -4px;*/                   
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="warp">
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae magni ex error esse cumque enim possimus maiores. Veritatis atque assumenda, omnis labore optio eligendi aliquam perferendis quia est quaerat!</p>
+        </div><!--(2)透過註解把中間的空白忽略掉
+     --><div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae magni ex error esse cumque enim possimus maiores. Veritatis atque assumenda, omnis labore optio eligendi aliquam perferendis quia est quaerat!</p>
+        </div><div class="item"> <!--(3)不斷行所以就不會多出空白-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae magni ex error esse cumque enim possimus maiores. Veritatis atque assumenda, omnis labore optio eligendi aliquam perferendis quia est quaerat!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae magni ex error esse cumque enim possimus maiores. Veritatis atque assumenda, omnis labore optio eligendi aliquam perferendis quia est quaerat!</p>
+        </div>
+    </div>
+</body>
+</html>

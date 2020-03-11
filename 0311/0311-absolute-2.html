@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        div{
+            border: 3px solid coral;
+            padding: 50px;
+        }
+        .b4{
+            /*不設定寬度就會自動是內容ㄉ寬度*/
+            width: 50px;
+            height: 50px;
+            background-color: #f00;
+            opacity: .5;
+            /*在最上層覆蓋其他東西，不定位的話會留在原本在原始碼中ㄉ位子*/
+            position: absolute; 
+            /*TRBL未設定會在原始碼的位子，可被卷軸捲走，會一直往上去尋找父層是否有定位，以父層為基準去設定TRBL，最最父層是視窗*/
+            bottom: 0;          
+            border: none;
+        }
+        .b2{
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="b1">
+      b1
+      <div class="b2">
+          b2
+          <div class="b3">
+              b3
+              <div class="b4">
+                  b4
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

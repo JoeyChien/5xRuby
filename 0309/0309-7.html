@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .wrap{
+            width: 660px;
+            height: 660px;
+            background-color: skyblue;
+            display: flex;                   
+            margin: auto;
+            flex-wrap: wrap;
+            /*flex-wrap: wrap-reverse; 把次軸反過來*/
+            /* flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column; 
+            flex-direction: column-reverse;*/
+            /*以主軸方向控制內容-主軸結束方向*/
+            /*justify-content: flex-end;*/
+            /*以主軸方向控制內容-居中*/
+            /*justify-content: center; 
+            /*每個元素間及邊框等距，較少用*/
+            /*justify-content: space-evenly; 
+            /*元素與元素之間等距 */
+            /* justify-content: space-between; 
+            /*每個元素周圍多一個等距*/
+            /*justify-content: space-around; */
+            /*主軸的方向設定*/
+            flex-direction: row-reverse;
+            /*整個彈性列以次軸的方向推*/
+            align-content: flex-start;            
+            /*彈性列的項目以次軸的方向推*/
+            align-items: center; 
+        }
+        .item{
+            width: 200px;
+            /* height: 200px; */
+            margin: 10px;
+        }
+        .i1{
+            background-color: mediumorchid;
+        }
+        .i2{
+            background-color: mediumseagreen;
+        }
+        .i3{
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item i1">
+            A 收入危險開心等人不多策略網際快車
+        </div>
+        <div class="item i2">
+            B 收入危險開心等人不多策略網際快車收入危險開心等人不多策略網際快車
+        </div>
+        <div class="item i3">
+            C 收入危險開心等人不多策略網際快車
+        </div>
+        <div class="item i1">
+            D 收入危險開心等人不多策略網際快車
+        </div>
+        <div class="item i2">
+            E 收入危險開心等人不多策略網際快車
+        </div>
+        <div class="item i3">
+            F 收入危險開心等人不多策略網際快車
+        </div>
+
+    </div>
+</body>
+</html>
