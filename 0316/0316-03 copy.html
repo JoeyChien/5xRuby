@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;   
+        }
+        .card{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /* overflow: hidden; */
+            /* scrol會永遠有捲軸，auto是有需要才出現捲軸*/
+        }
+        .card img{
+            vertical-align: top;
+            width: 200px;
+            height: 200px;
+        }
+        .card .txt{      
+            padding: 10px;     
+            background-color: rgba(255, 200, 100, .5);
+            color: white;
+            position: absolute;
+            margin: auto;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            /*下移自己物件的高度*/
+            /* transform: translateY(100%); */
+            transform: scale(0) rotate(90deg);
+            opacity: 0;
+            /* transition: 2s; */
+            transition: transform 1s; /*針對要控制的屬性*/
+        }
+        .card:hover .txt{
+            /* transform: translateY(100%); */
+            transform: scale(1) rotate(0deg);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="http://template65287.motopreview.com/mt-demo/65200/65287/mt-content/uploads/2017/10/mt-1223-home-img06.jpg" alt="">
+        <div class="txt">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis dolore cumque at totam unde neque tenetur quas expedita nam reprehenderit.
+        </div>
+    </div>
+</body>
+</html>

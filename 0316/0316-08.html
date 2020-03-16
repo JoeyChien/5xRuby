@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .wrap{
+            width: 100%;
+            margin: auto;
+            max-width: 1200px;
+        }
+        /*由後往前，先找第二個元素，再找div，但是第二不是div所以沒有效用*/
+        .box div:nth-child(2){
+            background-color: pink;
+        }
+        /*以類型去計算，找div類型的兩個中第一個*/
+        .box div:nth-of-type(2n+1){
+            background-color: plum;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>div</div>
+        <span>span</span>
+        <div>div</div>
+        <span>span</span>
+        <div>div</div>
+        <span>span</span>
+        <div>div</div>
+        <span>span</span>
+        <div>div</div>
+        <span>span</span>
+    </div>
+</body>
+</html>

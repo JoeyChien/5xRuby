@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .wrap{
+            width: 100%;
+            margin: auto;
+            max-width: 1200px;
+        }
+        .item{
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #aaa;
+            box-sizing: border-box;
+        }
+        .item img{
+            width: 100%;
+        }
+        @media screen and (min-width: 768px) {
+            .item{
+                display: flex;
+                justify-content: space-between;
+            }
+            .item .pic{
+                width: 50%;
+                box-sizing: border-box;
+            }
+            .item .pic{
+                width: 50%;
+                box-sizing: border-box;
+                padding: 0 20px;
+            }
+            /*2n+1*/
+            .item:nth-child(even) .pic{
+                order: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+       <div class="item">
+           <div class="pic"><img src="http://template65287.motopreview.com/mt-demo/65200/65287/mt-content/uploads/2017/10/mt-1223-home-img06.jpg" alt=""></div>
+           <div class="txt">
+               <h3>Title</h3>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           </p>
+           </div>           
+       </div>
+       <div class="item">
+           <div class="pic"><img src="http://template65287.motopreview.com/mt-demo/65200/65287/mt-content/uploads/2017/10/mt-1223-home-img06.jpg" alt=""></div>
+           <div class="txt">
+               <h3>Title</h3>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           </p>
+           </div>           
+       </div>
+       <div class="item">
+           <div class="pic"><img src="http://template65287.motopreview.com/mt-demo/65200/65287/mt-content/uploads/2017/10/mt-1223-home-img06.jpg" alt=""></div>
+           <div class="txt">
+               <h3>Title</h3>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           </p>
+           </div>           
+       </div>
+       <div class="item">
+           <div class="pic"><img src="http://template65287.motopreview.com/mt-demo/65200/65287/mt-content/uploads/2017/10/mt-1223-home-img06.jpg" alt=""></div>
+           <div class="txt">
+               <h3>Title</h3>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           </p>
+           </div>           
+       </div>
+       <div class="item">
+           <div class="pic"><img src="http://template65287.motopreview.com/mt-demo/65200/65287/mt-content/uploads/2017/10/mt-1223-home-img06.jpg" alt=""></div>
+           <div class="txt">
+               <h3>Title</h3>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           </p>
+           </div>           
+       </div>
+       <div class="item">
+           <div class="pic"><img src="http://template65287.motopreview.com/mt-demo/65200/65287/mt-content/uploads/2017/10/mt-1223-home-img06.jpg" alt=""></div>
+           <div class="txt">
+               <h3>Title</h3>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           </p>
+           </div>           
+       </div>
+    </div>
+</body>
+</html>
