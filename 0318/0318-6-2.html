@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+        #menu-control {
+            display: none;
+        }
+        .main-header{
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            background-color: peachpuff;
+            align-items: center;
+            position: relative;
+        }
+        .logo img{
+            vertical-align: middle;
+        }        
+        .main-nav a{
+            padding: 10px 20px;
+            text-decoration: none;
+        }         
+        
+        @media screen and (max-width: 767px) {            
+            .main-nav{
+                position: absolute;            
+                top: 0%;
+                width: 80%;
+                /* 視窗的100%高度 */
+                height: 100vh;
+                transition: left .6s;
+                left: -80%;
+                background-color: plum;  
+            }
+            .hb{
+                display: block;
+                width: 28px;
+                height: 28px;
+                border: 1px solid #ccc;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                position: relative;
+            }
+            .hb span{                
+                height: 2px;
+                width: 20px;
+                background-color: #666;
+                display: block;
+                position:absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+            #menu-control:checked ~ .main-header .main-nav{
+                left: 0;
+            }
+            .hb span:nth-child(1){
+                transform:  translateY(-6px) rotate(0);
+                transition:  .6s;                
+            }
+            /* .hb span:nth-child(2){} */
+            .hb span:nth-child(3){
+                transform:  translateY(6px) rotate(0);
+                transition:  .6s;   
+            }
+            #menu-control:checked ~ .main-header .hb span:nth-child(1){              
+                transform: translateY(0px) rotate(45deg);
+            }
+            #menu-control:checked ~ .main-header .hb span:nth-child(2){
+               display: none;               
+            }
+            #menu-control:checked ~ .main-header .hb span:nth-child(3){               
+                transform: translateY(0px) rotate(-45deg);
+            }
+            .main-nav a{
+                display: block;
+            } 
+            .main-nav a + a {
+                border-top: 1px solid peachpuff;
+            }      
+           
+        }
+        @media screen and (min-width: 768px) {            
+            .main-nav{
+                display: flex;
+                position: relative;
+                top: auto;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="menu-control">
+    <div class="main-header">
+        <div class="logo">
+            <a href="#">
+                <img src="http://template65287.motopreview.com/mt-demo/65200/65287/mt-content/uploads/2017/10/mt-1223-home-img01.jpg" style="width: 80px;height: 30px;" alt="">
+            </a>
+        </div>
+        <label for="menu-control" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main-nav">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+   </div>
+
+
+</body>
+</html>
