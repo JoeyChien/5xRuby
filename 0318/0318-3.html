@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        input:checked{
+            transform: scale(2);
+        }
+        /* 加號選到後面緊跟著的 */
+        input:checked + label{
+            color: red;
+        }
+        /* input:checked + label + p{
+            color: red;
+        } */
+        /* ~選到後面所有同層的 */
+        input:checked ~ p{
+            color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="one">
+    <label for="one">label</label>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, eum quia? Dolores fugiat et illo nihil! Omnis veniam voluptate minus? A magni dolorem obcaecati, odio illum ipsam rem molestias repellendus.</p>
+</body>
+</html>
